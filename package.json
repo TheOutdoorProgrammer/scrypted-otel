@@ -1,5 +1,6 @@
 {
-   "name": "@scrypted/vscode-typescript",
+   "name": "@scrypted/otel-collector",
+   "version": "0.1.0",
    "scripts": {
       "scrypted-setup-project": "scrypted-setup-project",
       "prescrypted-setup-project": "scrypted-package-json",
@@ -15,14 +16,20 @@
    },
    "scrypted": {
       "rollup": true,
-      "name": "TypeScript Light",
-      "type": "Light",
+      "name": "OpenTelemetry Collector",
+      "type": "API",
       "interfaces": [
-         "OnOff"
+         "Settings"
       ]
    },
    "dependencies": {
-      "@scrypted/sdk": "^0.5.29"
+      "@scrypted/sdk": "^0.5.29",
+      "@opentelemetry/api": "^1.9.0",
+      "@opentelemetry/api-logs": "^0.54.0",
+      "@opentelemetry/sdk-logs": "^0.54.0",
+      "@opentelemetry/exporter-logs-otlp-http": "^0.54.0",
+      "@opentelemetry/resources": "^1.28.0",
+      "@opentelemetry/semantic-conventions": "^1.28.0"
    },
    "devDependencies": {
       "@types/node": "^24.0.10"
