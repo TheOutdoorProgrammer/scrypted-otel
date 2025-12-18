@@ -25,9 +25,8 @@
    "dependencies": {
       "@scrypted/sdk": "^0.5.29",
       "@opentelemetry/api": "^1.9.0",
-      "@opentelemetry/api-logs": "^0.54.0",
-      "@opentelemetry/sdk-logs": "^0.54.0",
-      "@opentelemetry/exporter-logs-otlp-http": "^0.54.0",
+      "@opentelemetry/sdk-metrics": "^1.28.0",
+      "@opentelemetry/exporter-metrics-otlp-http": "^0.54.0",
       "@opentelemetry/resources": "^1.28.0",
       "@opentelemetry/semantic-conventions": "^1.28.0"
    },
